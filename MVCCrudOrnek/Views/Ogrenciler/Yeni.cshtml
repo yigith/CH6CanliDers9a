@@ -1,0 +1,32 @@
+﻿@model YeniOgrenciViewModel
+@{
+    ViewBag.Title = "Yeni Öğrenci";
+}
+
+<h1>Yeni Öğrenci</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="Ad" class="form-label"></label>
+        <input asp-for="Ad" class="form-control">
+        <div class="form-text text-danger">
+            <span asp-validation-for="Ad"></span>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="DogumYili" class="form-label"></label>
+        <input asp-for="DogumYili" class="form-control">
+        <div class="form-text text-danger">
+            <span asp-validation-for="DogumYili"></span>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Takim" class="form-label"></label>
+        <input asp-for="Takim" class="form-control">
+        <div class="form-text text-danger">
+            <span asp-validation-for="Takim"></span>
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
