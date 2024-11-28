@@ -2,9 +2,11 @@
 
 namespace MVCCrudOrnek.Models
 {
-    public class YeniOgrenciViewModel
+    public class OgrenciDuzenleViewModel
     {
-        [Display(Name = "Eklenecek Öğrencinin Adı")]
+        public int Id { get; set; }
+
+        [Display(Name = "Öğrencinin Adı")]
         [Required(ErrorMessage = "'Ad' alanı zorunludur.")]
         [MaxLength(20, ErrorMessage = "Öğrencinin adı 30 karakterden uzun olamaz.")]
         public string Ad { get; set; } = "";

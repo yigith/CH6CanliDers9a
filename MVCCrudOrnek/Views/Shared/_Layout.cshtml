@@ -39,11 +39,10 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - MVCCrudOrnek - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    @* https://learn.microsoft.com/en-us/aspnet/core/mvc/views/partial?view=aspnetcore-8.0 *@
+    @* <partial name="_FooterPartial" model="DateTime.Now.Year" /> *@
+    @await Html.PartialAsync("_FooterPartial", DateTime.Now.Year)
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

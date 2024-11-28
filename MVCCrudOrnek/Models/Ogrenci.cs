@@ -8,7 +8,7 @@ namespace MVCCrudOrnek.Models
 
         public string Ad { get; set; } = "";
 
-        public string Takim { get; set; } = "";
+        public int TakimId { get; set; }
 
         public int DogumYili { get; set; }
     }
